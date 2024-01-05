@@ -2,8 +2,15 @@ import errno
 import shutil
 import json
 from scraper import WebScraper
+import os
+from colorama import init
+from termcolor import colored
 
+init()
 
+scraper = WebScraper()
+
+# Functions
 def copy_folder(src, dst):
     try:
         shutil.copytree(src, dst)
@@ -12,20 +19,19 @@ def copy_folder(src, dst):
             shutil.copy(src, dst)
         else: raise
 
+def print_logo():
+   ascii_file = open("assets/folioport-ascii.txt", "r")
+   ascii_image =  ascii_file.read()
+   print(ascii_image)
+   print("\n\n")
+   print("                        The script developed by zekkontro")
+   print("                     https://github.com/zekkontro/folioport")
+   print("\n\n")
 
 
 
-ascii_file = open("assets/folioport-ascii.txt", "r")
-ascii_image =  ascii_file.read()
-print(ascii_image)
-print("\n\n")
-print("                        The script developed by zekkontro")
-print("                     https://github.com/zekkontro/folioport")
-print("\n\n")
 
-
-
-scraper = WebScraper()
+print_logo()
 
 projectName = input("Project Name (output_site): ")
 
@@ -64,6 +70,12 @@ for x in range(blog_input_count):
 
    blogInputData.append({"cover_image_link": cover_image_link, "description": description, "link":link})
 
+os.system('cls' if os.name == 'nt' else 'clear')
+print_logo()
+print("\n\n")
+
+print(colored("Generating your web site...", color="yellow"))
+print("\n\n")
 # Scraping
 githubRepos = scraper.getGithubRepos(repo_link_list)
 mediumBlogs = scraper.getMediumBlogs(blogInputData)
@@ -96,3 +108,9 @@ copy_folder(src="default", dst=projectName)
 # Save the json file
 with open(projectName +'/assets/assets/data.json', 'w') as f:
     f.write(json_object)
+    
+os.system('cls' if os.name == 'nt' else 'clear')
+print_logo()
+print("\n\n")
+
+print(colored("✔ Your site generated with successfully", color="green"))
