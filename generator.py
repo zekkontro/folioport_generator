@@ -2,8 +2,6 @@ import errno
 import shutil
 import json
 from scraper import WebScraper
-import os
-import time
 
 
 def copy_folder(src, dst):
@@ -16,11 +14,6 @@ def copy_folder(src, dst):
 
 
 
-print("Folioport updating...")
-time.sleep(3)
-os.system("git clone https://github.com/zekkontro/folioport")
-os.system("cd folioport && flutter build web")
-copy_folder("./folioport/build/web", "default")
 
 ascii_file = open("assets/folioport-ascii.txt", "r")
 ascii_image =  ascii_file.read()
