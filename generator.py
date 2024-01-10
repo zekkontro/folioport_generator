@@ -11,7 +11,7 @@ init()
 scraper = WebScraper()
 
 # Functions
-def copy_folder(src, dst):
+def copyfolder(src, dst):
     try:
         shutil.copytree(src, dst)
     except OSError as exc: # python >2.5
@@ -20,6 +20,7 @@ def copy_folder(src, dst):
         else: raise
 
 def print_logo():
+   os.system('cls' if os.name == 'nt' else 'clear')
    ascii_file = open("assets/folioport-ascii.txt", "r")
    ascii_image =  ascii_file.read()
    print(ascii_image)
@@ -39,6 +40,7 @@ projectName = "output_site" if projectName == "" or projectName == None else pro
 
 firstName = input("Your First Name: ")
 secondName = input("Your Second Name: ")
+image_path = input("Profile image file: ")
 email = input("Email: ")
 role = input("Role: ")
 introductionText = input("Introduction Text: ")
@@ -70,7 +72,6 @@ for x in range(blog_input_count):
 
    blogInputData.append({"cover_image_link": cover_image_link, "description": description, "link":link})
 
-os.system('cls' if os.name == 'nt' else 'clear')
 print_logo()
 print("\n\n")
 
@@ -102,15 +103,17 @@ json_object = json.dumps(data, indent=4)
 
 
 # create new project folder
-copy_folder(src="default", dst=projectName)
+copyfolder(src="default", dst=projectName)
 
 
 # Save the json file
 with open(projectName +'/assets/assets/data.json', 'w') as f:
     f.write(json_object)
+
+# Copy developer image to website folder
+shutil.copy(image_path, projectName +'/assets/assets/images/developer.jpeg')
     
-os.system('cls' if os.name == 'nt' else 'clear')
 print_logo()
 print("\n\n")
 
-print(colored("✔ Your site generated with successfully", color="green"))
+print(colored("✔ Portfolio site generated with successfully", color="green"))

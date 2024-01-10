@@ -1,0 +1,102 @@
+{
+  "firstName": "Berat",
+  "secondName": "Kurt",
+  "email": "brokbro052@gmail.com",
+  "role": "Full-Stack Developer",
+  "introductionText": "I am creating compatible, user-oriented and innovative applications for both iOS and Android with Flutter.",
+  "socialProfile": {
+      "instagram": "https://www.instagram.com/beratkurttx/",
+      "dribble": "",
+      "linkedin": "https://www.linkedin.com/in/berat-kurt-958b6a202/",
+      "github": "https://github.com/zekkontro",
+      "youtube": ""
+  },
+  "githubRepos": [
+     {
+          "title": "shortel",
+          "stars": 1,
+          "description": "Shortel Link k\u0131salt\u0131c\u0131",
+          "language": "Dart",
+          "url": "https://github.com/zekkontro/shortel",
+          "forks": 0
+      },
+      {
+          "title": "sohbetapp",
+          "stars": 0,
+          "description": null,
+          "language": "Dart",
+          "url": "https://github.com/zekkontro/sohbetapp",
+          "forks": 1
+      },
+      {
+          "title": "application_landing_page",
+          "stars": 1,
+          "description": null,
+          "language": "Dart",
+          "url": "https://github.com/zekkontro/application_landing_page",
+          "forks": 0
+      },
+      {
+          "title": "folioport",
+          "stars": 0,
+          "description": null,
+          "language": "Dart",
+          "url": "https://github.com/zekkontro/folioport",
+          "forks": 0
+      },
+      {
+          "title": "youtube_cc",
+          "stars": 2,
+          "description": "Dart package with closed captions for Youtube videos",
+          "language": "Dart",
+          "url": "https://github.com/zekkontro/youtube_cc",
+          "forks": 1
+      },
+      {
+          "title": "flutter-packages-api",
+          "stars": 0,
+          "description": "Get information flutter packages",
+          "language": "Python",
+          "url": "https://github.com/zekkontro/flutter-packages-api",
+          "forks": 0
+      }
+  ],
+  "mediumBlogs": [
+      {
+          "title": "Flutter\u2019da Verileri cihaz \u00fczerinde \u015fifreli bir \u015fekilde depolamak.",
+          "readTime": "3 min read",
+          "publishDate": "May 10, 2021",
+          "link": "https://medium.com/@zekkontro/flutterda-verileri-cihaz-%C3%BCzerinde-%C5%9Fifreli-bir-%C5%9Fekilde-depolamak-bedadb8edb10",
+          "cover_image_link": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*Jq-1wEhy-RJivXr_V2WuwA.png",
+          "description": "Merhaba arkada\u015flar, \u00e7o\u011fumuz Flutter ve Dart dili ile \u00e7al\u0131\u015f\u0131rken kullan\u0131c\u0131n\u0131n verilerini shared_preferences paketini kullanarak depolamaya \u00e7al\u0131\u015f\u0131yoruz. Ama shared_preferences paketi bize ger\u00e7ekten yerel bir depolama sa\u011flarken g\u00fcvenlik a\u00e7\u0131s\u0131ndan ve kritik veri tutma a\u00e7\u0131s\u0131ndan yetersiz kalmakta"
+      },
+      {
+          "title": "Sosyal M\u00fchendislik \u2014 Teoride Siber G\u00fcvenlik",
+          "readTime": "7 min read",
+          "publishDate": "Nov 10, 2023",
+          "link": "https://medium.com/tech-sheet/sosyal-m%C3%BChendislik-teoride-siber-g%C3%BCvenlik-89404688aef8",
+          "cover_image_link": "https://miro.medium.com/v2/resize:fit:1200/format:webp/1*OnYuD2la9XRjveHFBt-3tg.jpeg",
+          "description": "Hepinize merhabalar! Bence her k\u00fc\u00e7\u00fc\u011fe ya da gence \u201cHacker\u201d kavram\u0131 \u00e7ok \u00e7ekici gelmi\u015ftir veya hepimiz illaki hayat\u0131m\u0131z\u0131n bir d\u00f6neminde filmlerde, ekranda kayan o ye\u015fil yaz\u0131lara \u00f6zenmi\u015fizdir. Ben de ortaokul d\u00f6nemlerimde ger\u00e7ekten bili\u015fim sekt\u00f6r\u00fcn\u00fcn geneline \u00e7ok merakl\u0131 bir \u00e7ocuk olarak hacker olmay\u0131 isterdim. Lise d\u00f6nemlerinde de bu merak\u0131m\u0131 biraz daha \u00f6teye ta\u015f\u0131d\u0131m ve siber g\u00fcvenlik \u00fczerine yaz\u0131lar okumaya, kendimi geli\u015ftirmeye ba\u015flad\u0131m."
+      },
+      {
+          "title": "G\u00fcnl\u00fck Doz \u2014 2: Flutter Web ile Responsive Web Uygulamas\u0131 Geli\u015ftirme",
+          "readTime": "6 min read",
+          "publishDate": "Jul 28, 2021",
+          "link": "https://medium.com/@zekkontro/g%C3%BCnl%C3%BCk-doz-2-flutter-web-ile-responsive-web-uygulamas%C4%B1-geli%C5%9Ftirme-b0d8672987f9",
+          "cover_image_link": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*BdZmuF5bYclp_wSkVrksoA.jpeg",
+          "description": "\u00d6ncelikle hepinize merhaba arkada\u015flar, umar\u0131m sa\u011fl\u0131\u011f\u0131n\u0131z s\u0131hatiniz yerindedir. Bug\u00fcn yine kafama esmesi \u00fczerine G\u00fcnl\u00fck Doz serisi i\u00e7in ikinci bir yaz\u0131 yazmaya karar verdim. Bildi\u011finiz \u00fczere Flutter 2.0 ile birlikte Flutter Web art\u0131k \u201cstable\u201d kanal\u0131na ge\u00e7ti. Bu da Flutter Web\u2019in, Android ve IOS\u2019ta oldu\u011fu kadar s\u0131k\u0131nt\u0131s\u0131z ve g\u00fc\u00e7l\u00fc bir \u015fekilde \u00e7al\u0131\u015fmas\u0131 demek. Ama Flutter tam olarak html ve css\u2019e derlenemedi\u011finden yine de tam olarak native bir web uygulamas\u0131 elde etmek m\u00fcmk\u00fcn de\u011fil bu da insan\u0131n can\u0131n\u0131 bir hayli s\u0131k\u0131yor"
+      }
+  ],
+  "skills": [
+      "Flutter",
+      "Dart",
+      "Python",
+      "REST API",
+      "Firebase",
+      "MongoDb",
+      "SQL",
+      "Figma",
+      "Hacking"
+  ],
+  "aboutMeText": "Hi There! I'm Berat Kurt. I have been working in software development for more than 5 years. I have also been developing efficiency, ease of use and high-performance applications with Flutter for the last 3.5 years."
+}
